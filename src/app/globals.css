@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #101014;
+}
+
+html {
+  /* Always reserve the scrollbar gutter, even while scrolling is locked
+     (see wordmark-reveal.tsx) — otherwise the gutter appears/disappears
+     when overflow toggles between hidden and visible, shifting the whole
+     page horizontally. */
+  scrollbar-gutter: stable;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-karla);
+
+  /* Splendor's brand violet (#6e00bc, sampled from splendordesign.com)
+     as the 600, with a ramp built around it. */
+  --color-brand-50: #f8f2ff;
+  --color-brand-100: #efe1fe;
+  --color-brand-200: #dec3fc;
+  --color-brand-300: #c496f7;
+  --color-brand-400: #a663ef;
+  --color-brand-500: #8b33e1;
+  --color-brand-600: #6e00bc;
+  --color-brand-700: #5c009e;
+  --color-brand-800: #490080;
+  --color-brand-900: #380063;
+  --color-brand-950: #210040;
+
+  /* Deep teal, the secondary they pair with the violet. */
+  --color-ink-700: #00505f;
+  --color-ink-800: #003643;
+  --color-ink-900: #00242d;
+  --color-ink-950: #001217;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+}
