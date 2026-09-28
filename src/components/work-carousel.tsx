@@ -171,7 +171,9 @@ export function WorkCarousel({ studies }: { studies: CaseStudy[] }) {
               >
                 {/* Duotone: desaturate the photo, then lay the brand violet
                     over it with a multiply blend so every card in the rail
-                    reads as one branded set rather than ten stock photos. */}
+                    reads as one branded set rather than ten stock photos.
+                    Held at a quarter strength — enough for a consistent cast,
+                    not so much that the photography disappears under it. */}
                 <Image
                   src={`https://picsum.photos/id/${study.imageId}/640/480`}
                   alt=""
@@ -180,7 +182,7 @@ export function WorkCarousel({ studies }: { studies: CaseStudy[] }) {
                   className="object-cover grayscale"
                   priority={isActive}
                 />
-                <div className="absolute inset-0 bg-brand-800 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-brand-800 opacity-25 mix-blend-multiply" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-950/90 via-ink-950/20 to-transparent" />
 
                 <div className="relative mt-auto flex flex-col p-5">

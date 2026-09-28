@@ -48,10 +48,10 @@ export default function Home() {
             Services
           </p>
           <h2 className="mt-2 max-w-3xl text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl">
-            A human-led, AI-empowered, full-service creative agency.
+            Rooted in the principles of design.
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-stone-600">
-            Rooted in the principles of design, Splendor works across branding, custom
+            Splendor is a full-service creative agency working across branding, custom
             web design, digital marketing and content strategy — usually all four at once
             for the same client.
           </p>

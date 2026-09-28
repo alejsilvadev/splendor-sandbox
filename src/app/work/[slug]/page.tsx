@@ -61,7 +61,7 @@ export default async function CaseStudyPage({
           priority
           className="object-cover opacity-45 grayscale"
         />
-        <div className="absolute inset-0 bg-brand-900 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-brand-900 opacity-25 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-ink-950/60 to-ink-950/30" />
 
         <div className="relative mx-auto w-full max-w-3xl px-6">
