@@ -8,7 +8,7 @@ const NAV_ITEMS = [
   { id: "home", label: "Home", href: "/" },
   { id: "approach", label: "Approach", href: "/#approach" },
   { id: "services", label: "Services", href: "/#services" },
-  { id: "work", label: "Work", href: "/work" },
+  { id: "work", label: "Work", href: "/#work" },
 ] as const;
 
 const SECTION_IDS = ["approach", "services", "work"];
@@ -144,9 +144,6 @@ export function Navbar() {
                 // relevant when we're already on "/"; a route change
                 // (e.g. from /work/[slug]) should navigate normally.
                 if (pathname !== "/") return;
-                // "Work" points at a real route, not a section anchor —
-                // let the router handle it.
-                if (!item.href.startsWith("/#")) return;
                 if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
 
                 e.preventDefault();

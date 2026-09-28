@@ -249,6 +249,13 @@ export const AGENCY_FACTS = [
   { value: "2", label: "offices — Red Bank, NJ & Jacksonville, FL" },
 ] as const;
 
+export const DISCIPLINES: Discipline[] = [
+  "Branding",
+  "Website Design",
+  "Digital Marketing",
+  "Content Marketing",
+];
+
 export const CASE_STUDY_COUNT = CASE_STUDIES.length;
 
 export function findCaseStudy(slug: string): CaseStudy | undefined {

@@ -66,7 +66,7 @@ export default async function CaseStudyPage({
 
         <div className="relative mx-auto w-full max-w-3xl px-6">
           <Link
-            href="/work"
+            href="/#work"
             className="group inline-flex items-center gap-1.5 text-sm text-stone-300 transition-colors hover:text-white"
           >
             <ArrowLeftIcon className="h-3.5 w-3.5 transition-transform duration-200 group-hover:-translate-x-1" />

@@ -1,11 +1,9 @@
-import Link from "next/link";
 import { CASE_STUDIES, SERVICES, AGENCY_FACTS } from "@/lib/work";
 import { ViewedCounterBadge } from "@/components/viewed-counter-badge";
-import { WorkCarousel } from "@/components/work-carousel";
+import { WorkShowcase } from "@/components/work-showcase";
 import { ServicesGrid } from "@/components/services-grid";
 import { WordmarkReveal } from "@/components/wordmark-reveal";
 import { WireframeSphereLoader } from "@/components/wireframe-sphere-loader";
-import { ArrowRightIcon } from "@/components/icons";
 
 export default function Home() {
   return (
@@ -96,15 +94,7 @@ export default function Home() {
           <ViewedCounterBadge />
         </div>
 
-        <WorkCarousel studies={CASE_STUDIES} />
-
-        <Link
-          href="/work"
-          className="group mt-10 inline-flex w-fit items-center gap-2 self-center rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-700"
-        >
-          Browse all work
-          <ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
-        </Link>
+        <WorkShowcase initialStudies={CASE_STUDIES} />
       </main>
     </>
   );
